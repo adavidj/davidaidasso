@@ -40,9 +40,7 @@ window.addEventListener('scroll', shadowHeader)
 
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
-    //   contactName = document.getElementById('contact-name'),
-    //   contactEmail = document.getElementById('contact-email'),
-    //   contactProject = document.getElementById('contact-project'),
+  
       contactMessage = document.getElementById('contact-message')
 
       const sendEmail = (e) =>{
@@ -68,16 +66,16 @@ const contactForm = document.getElementById('contact-form'),
 
       contactForm.addEventListener('submit', sendEmail)
 
-/*=============== SHOW SCROLL UP ===============*/ 
+// montrer scrollup
 const scrollUp = () =>{
     const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is greater than 350 viewport height, add the scroll-header class to the header tag
+
     this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') 
                        : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/* scroll active lien */
 const sections = document.querySelectorAll('section[id]')
     
 const scrollActive = () =>{
@@ -99,16 +97,14 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 
-/*=============== DARK LIGHT THEME ===============*/ 
+/*=DARK  THEME*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'ri-sun-line'
-
-// Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-// We obtain the current theme that the interface has by validating the light-theme class
+
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
 
@@ -121,7 +117,7 @@ if (selectedTheme) {
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the light / icon theme
+    
     document.body.classList.toggle(darkTheme) 
     themeButton.classList.toggle(iconTheme)
     // We save the theme and the current icon that the user chose
