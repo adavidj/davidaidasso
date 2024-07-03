@@ -477,7 +477,7 @@ body.dark-theme{
 }
 
 .home__social{
-  height: max-content;
+  height: 0;
   width: 0;
   position: absolute;
   left: -3rem;
