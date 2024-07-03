@@ -481,7 +481,7 @@ body.dark-theme{
   width: 0;
   position: absolute;
   left: -3rem;
-  top: 0;
+  top: -6rem;
   bottom: 0;
   margin: auto 0;
   display: grid;
