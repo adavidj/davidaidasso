@@ -491,7 +491,7 @@ body.dark-theme{
   background-color: var(--text-color-light);
   color: var(--white-color);
   
-  
+  padding: 6px;
   place-items: center;
   transition: background-color .3s;
   border-radius: 1rem;
@@ -1301,6 +1301,10 @@ i
 
   .home__image{
     width: 180px;
+  }
+
+  .home__social{
+
   }
 
   .about__image{
