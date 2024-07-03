@@ -13,29 +13,31 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
       <title>Responsive portfolio website- DaveCoding</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
-      < <header class="header" id="header">
+       <header class="header" id="header" >
          <nav class="nav container">
              <a href="#" class="nav__logo">
                  <span class="nav__logo-circle">AD</span>
                  <span class="nav__logo-name">David Jonathan.</span>
              </a>
 
-             <div class="nav__menu" id="nav-menu">
+             <div class="nav__menu" id="nav-menu" >
                  <span class="nav__title">Menu</span>
 
                  <h3 class="nav__name">David</h3>
 
                  <ul class="nav__list">
                      <li class="nav__item">
-                         <a href="#home" class="nav__link active-link">Home</a>
+                         <a href="#home" class="nav__link active-link">Accueil</a>
                      </li>
 
                      <li class="nav__item">
-                         <a href="#about" class="nav__link ">About me</a>
+                         <a href="#about" class="nav__link ">A propos</a>
                      </li>
 
                      <li class="nav__item">
@@ -63,7 +65,7 @@
                  </div>
              </div>
 
-             <div class="nav__buttons">
+             <div class="nav__buttons" data-aos ='fade-down' data-aos-delay='1200'>
                 <i class="ri-moon-line change-theme" id="theme-button"></i>
                <!-- toggle buttons -->
                <div class="nav__toggle" id="nav-toggle">
@@ -84,7 +86,7 @@
 
                 <div class="home__profil">
                     <div class="home__image">
-                        <img src="assets/img/home-perfil.jpg" alt="image" class="home__img">
+                        <img src="assets/img/dav.jpg" alt="image" class="home__img">
                         <div class="home__shadow"></div>
 
                         <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
@@ -110,9 +112,7 @@
 
                 <div class="home__info">
                     <p class="home__description">
-                        <b>Front-end Developer</b>, with knowledge in web 
-                            development and design, I offer the best 
-                            projects resulting in quality work.
+                        <b>Développeur front-end</b>. Je transforme vos visions en sites web révolutionnaires et mémorables. 
 
                     </p>
 
@@ -131,16 +131,18 @@
          <section class="about section" id="about">
             <div class="about__container container grid">
                 <h2 class="section__title-1">
-                    About Me.
+                    A propos de moi.
                 </h2>
 
                 <div class="about__profil">
                     <div class="about__image">
-                        <img src="assets/img/about-perfil.jpeg" alt="image" class="about__img">
+                        <img src="assets/img/dav_about.jpg" alt="image" class="about__img">
 
                         <div class="about__shadow"></div>
 
-                        <div class="geometric-box"></div>
+                        <div class="geometric-box"></div>   
+
+                        <div></div>
 
                         <img src="assets/img/random-lines.svg" class="about__line" alt="">
                         <div class="about__box"></div>
@@ -149,43 +151,39 @@
 
                 <div class="about__info">
                     <p class="about__description">
-                        Passionate about creating <b>Web sites</b> and 
-                        <b> design web </b>, I have more than two years of 
-                        experience and many clients are happy with 
-                        the projects carried out.
+                        Passionné par la création de <b>sites Web</b> et de leur 
+                        <b> design </b>, j'ai plus de deux ans d'expérience et des clients sont satisfaits des projets réalisés.
                     </p>
                     <div class="about__infos">
                         <div class="about__card">
                             <i class="ri-award-line"></i>
-                            <h3 class="about__title">Experience</h3>
-                            <span class="about__subtitle">+02 years working</span>
+                            <h3 class="about__title">Expérience</h3>
+                            <span class="about__subtitle">+02 ans</span>
                         </div>
 
                         <div class="about__card">
                             <i class="ri-briefcase-4-line"></i>
-                            <h3 class="about__title">Completed</h3>
-                            <span class="about__subtitle">10+ Projects</span>
+                            <h3 class="about__title">Réalisations</h3>
+                            <span class="about__subtitle">+7 projets</span>
                         </div>
 
                         <div class="about__card">
                             <i class="ri-open-source-line"></i>
-                            <h3 class="about__title">Support</h3>
-                            <span class="about__subtitle">Online 24/7</span>
+                            <h3 class="about__title">Assistance</h3>
+                            <span class="about__subtitle">En ligne 24h/7j</span>
                         </div>
                     </div>
 
                     <ul class="about__list">
                         <li class="about__item">
-                            <b>My Skills Are:</b> HTML, CSS, JavaScript, 
-                            Vue JS, Git & GitHub, Bootstrap, React, Tailwind & 
-                            Figma.
+                            <b>Mes compétences sont:</b> 
                         </li>
 
                         <div class="skills__container">
 
                             <div class="skills__content">
                                 <h3 class="skills__title">
-                                    <i class="ri-braces-line"></i> Front-end skills
+                                    <i class="ri-braces-line"></i> Front-end web
                                 </h3>
         
                                 <div class="skills__info">
@@ -195,7 +193,7 @@
                                         </div>
         
                                         <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__subtitle">Good</span>
+                                        <span class="skills__subtitle">Excellent</span>
                                     </div>
         
                                     <div class="skills__data">
@@ -204,8 +202,18 @@
                                         </div>
         
                                         <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__subtitle">Good</span>
+                                        <span class="skills__subtitle">Excellent</span>
                                     </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__blob">
+                                            <img src="assets/img/logo-javascript.svg" alt="skills image">
+                                        </div>
+        
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__subtitle">Bon</span>
+                                    </div>
+
 
                                     <div class="skills__data">
                                         <div class="skills__blob">
@@ -213,16 +221,17 @@
                                         </div>
         
                                         <h3 class="skills__name">Bootstrap</h3>
-                                        <span class="skills__subtitle">Good</span>
+                                        <span class="skills__subtitle">Bon</span>
                                     </div>
         
+                                    
                                     <div class="skills__data">
                                         <div class="skills__blob">
-                                            <img src="assets/img/logo-javascript.svg" alt="skills image">
+                                            <img src="assets/img/react-icon-1.svg" alt="skills image">
                                         </div>
         
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__subtitle">Good</span>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__subtitle">Bon</span>
                                     </div>
 
         
@@ -232,7 +241,7 @@
                                         </div>
         
                                         <h3 class="skills__name">Vue</h3>
-                                        <span class="skills__subtitle">Intermediate</span>
+                                        <span class="skills__subtitle">Intermédiaire</span>
                                     </div>
         
                                     <div class="skills__data">
@@ -241,18 +250,20 @@
                                         </div>
         
                                         <h3 class="skills__name">Git</h3>
-                                        <span class="skills__subtitle">Intermediate</span>
+                                        <span class="skills__subtitle">Bon</span>
                                     </div>
 
                                     
         
+                                    
+
                                     <div class="skills__data">
                                         <div class="skills__blob">
-                                            <img src="assets/img/react-icon-1.svg" alt="skills image">
+                                            <img src="assets/img/tailwind-css.svg" alt="skills image">
                                         </div>
         
-                                        <h3 class="skills__name">React</h3>
-                                        <span class="skills__subtitle">Intermediate</span>
+                                        <h3 class="skills__name">Tailwind CSS</h3>
+                                        <span class="skills__subtitle">Bon</span>
                                     </div>
                                 </div>
                             </div>
@@ -269,7 +280,16 @@
                                         </div>
         
                                         <h3 class="skills__name">Figma</h3>
-                                        <span class="skills__subtitle">Intermediate</span>
+                                        <span class="skills__subtitle">Intermédiaire</span>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <div class="skills__blob">
+                                            <img src="assets/img/canva.svg" alt="skills image">
+                                        </div>
+        
+                                        <h3 class="skills__name">Canva</h3>
+                                        <span class="skills__subtitle">Intermédiaire</span>
                                     </div>
         
                                     <div class="skills__data">
@@ -278,7 +298,7 @@
                                         </div>
         
                                         <h3 class="skills__name">Photoshop</h3>
-                                        <span class="skills__subtitle">Basic</span>
+                                        <span class="skills__subtitle">Basique</span>
                                     </div>
         
                                     
@@ -290,11 +310,11 @@
 
                     <div class="about__buttons">
                         <a href="#contact" class="button">
-                            <i class="ri-send-plane-line"></i> Contact me
+                            <i class="ri-send-plane-line"></i> Contactez-moi
                         </a>
 
-                        <a download="" href="assets/pdf/Davidaidasso_cv.pdf" target="_blank" class="button__ghost">
-                            Downoald CV
+                        <a download="" href="assets/pdf/CV-David A.pdf" target="_blank" class="button__ghost">
+                            Télécharger mon CV
                         </a>
 
                         
@@ -316,25 +336,21 @@
                     <div class="services__content">
                         <div class="services__icon">
                             <div class="services__box"></div>
-                            <i class="ri-layout-4-line"></i>
+                            <i class="ri-code-box-line"></i>
+                            
 
                         </div>
 
-                        <h2 class="services__title">Web development</h2>
+                        <h2 class="services__title">Création de sites web</h2>
 
-                        <p class="services__description">
-                            <b>Service with more than 2 years of experience. 
-                                Providing quality work to clients and companies.</b>
-                        </p>
+                        
                         <br>
                         <ul>
-                            <li><b>-></b> I develop the user interface.</li><br>
-                            <li><b>-></b> Web page development.</li><br>
-                            <li><b>-></b> I create web sites, portfolios and others.</li><br>
-                            <li><b>-></b> I position your company brand.</li><br>
-                            <li><b>-></b> J'héberge votre site web + nom de domaine.</li><br>
-                            <li><b>-></b> Je fais le référencement web SEO de votre site web </li><br>
-                            <li><b>-></b> Je corrige vos sites web déjà crées</li><br>
+                            <li><b>-></b> Landing page</li><br>
+                            <li><b>-></b> Portfolios</li><br>
+                            <li><b>-></b> Site personnalisé</li><br>
+                            <li><b>-></b> E-commerce</li><br>
+                            
                         </ul>
                     </div>
                 </article>
@@ -345,24 +361,19 @@
                     <div class="services__content">
                         <div class="services__icon">
                             <div class="services__box"></div>
-                            <i class="ri-code-box-line"></i>
+                            <i class="ri-layout-4-line"></i>
 
                         </div>
 
-                        <h2 class="services__title">Design Web</h2>
-
-                        <p class="services__description">
-                            <b>Custom web development tailored to your 
-                                specifications, designed to provide a 
-                                flawless user experience. Service with more than two years of experience. </b>
-                        </p>
+                        <h2 class="services__title">Correction et hébergement web</h2>
                         <br>
                         <ul>
-                            <li><b>-></b> Design and mockups of products for companies.</li><br>
-                            <li><b>-></b> I create the ui user interface.</li><br>
-                            <li><b>-></b> I position your company brand.</li><br>
-                            <li><b>-></b> I create ux element interactions.</li><br>
+                            <li><b>-></b> Hébergement du site wdeb</li><br>
+                            <li><b>-></b> Correction et mise à jour de vos sites</li><br>                       
+                            <li><b>-></b> Optimisation de la vitesse de chargement</li><br>
                         </ul>
+                        
+                        
                     </div>
                 </article>
 
@@ -376,15 +387,14 @@
 
                         </div>
 
-                        <h2 class="services__title">Web App</h2>
+                        <h2 class="services__title">Design web</h2>
 
-                        <p class="services__description">
-                            <b>
-                                Design and transform website projects 
-                            into web apps to provide a seamless
-                            user experience.
-                            </b>
-                        </p>
+                        <br>
+                        <ul>
+                            <li><b>-></b> Conception et maquettes de votre site</li><br>
+                            <li><b>-></b> Je crée l'interface utilisateur UI</li><br>
+                            <li><b>-></b> Je crée des interactions d'éléments ux.</li><br>
+                        </ul>
                     </div>
                 </article>
             </div>
@@ -406,160 +416,34 @@
          <!--==================== PROJECTS ====================-->
          <section class="projects section" id="projects">
             <h2 class="section__title-1">
-                <span>Projects.</span>
+                <span>Mes projets.</span>
             </h2>
 
             <div class="projects__container container grid">
+
                 <article class="projects__card">
                     <div class="projects__image">
-                        <img src="assets/img/project-1.png" alt="image" class="projects__img">
+                        <img src="assets/img/project-0.png" height="300px" alt="image" class="projects__img">
 
-                        <a href="#" class="projects__button button">
+                        <a href="https://davidjonathanaidasso.netlify.app/" class="projects__button button">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
 
                     <div class="projects__content">
-                        <h3 class="projects__subtitle">Website</h3>
-                        <h2 class="projects__title">Coffee website</h2>
+                        <h3 class="projects__subtitle">Site web</h3>
+                        <h2 class="projects__title">Mon portfolio</h2>
 
-                        <p class="projects__description">
-                            Project that you carry out in the design 
-                            and structure of the layout, showing the 
-                            design at the client's request.
-                        </p>
+                        
                     </div>
 
                     <div class="projects__buttons">
-                        <a href="" target="_blank" class="projects__link">
+                        <a href="https://gitlab.com/davidaidasso252/my-website" target="_blank" class="projects__link">
                             <i class="ri-github-line"></i>
                         </a>
 
-                        <a href="" target="_blank" class="projects__link">
+                        <a href="https://www.linkedin.com/posts/davidaidasso_portfolio-developer-companies-activity-7121817520092639232-lOLF?utm_source=share&utm_medium=member_desktop" target="_blank" class="projects__link">
                             <i class="ri-linkedin-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-facebook-line"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="assets/img/project-2.png" alt="image" class="projects__img">
-
-                        <a href="#" class="projects__button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-
-                    <div class="projects__content">
-                        <h3 class="projects__subtitle">App</h3>
-                        <h2 class="projects__title">Note App</h2>
-
-                        <p class="projects__description">
-                            Project that you carry out in the design 
-                            and structure of the layout, showing the 
-                            design at the client's request.
-                        </p>
-                    </div>
-
-                    <div class="projects__buttons">
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-linkedin-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-facebook-line"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="assets/img/project-3.png"  alt="image" class="projects__img">
-
-                        <a href="https://aidassodavid.netlify.app" class="projects__button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-
-                    <div class="projects__content">
-                        <h3 class="projects__subtitle">Website</h3>
-                        <h2 class="projects__title">Portfolio web</h2>
-
-                        <p class="projects__description">
-                            It's my first web portfolio with HTML, CSS and JS.
-                        </p>
-                    </div>
-
-                    <div class="projects__buttons">
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-linkedin-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-facebook-line"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="projects__card">
-                    <div class="projects__image">
-                        <img src="assets/img/project-4.png" alt="image" class="projects__img">
-
-                        <a href="https://davidoverpricedcars.netlify.app" class="projects__button button">
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
-                    </div>
-
-                    <div class="projects__content">
-                        <h3 class="projects__subtitle">Website</h3>
-                        <h2 class="projects__title">Travel site template</h2>
-
-                        <p class="projects__description">
-                            Project that you carry out in the design 
-                            and structure of the layout, showing the 
-                            design at the client's request.
-                        </p>
-                    </div>
-
-                    <div class="projects__buttons">
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-linkedin-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-facebook-line"></i>
                         </a>
                     </div>
                 </article>
@@ -568,62 +452,122 @@
                     <div class="projects__image">
                         <img src="assets/img/project-5.png" height="300px" alt="image" class="projects__img">
 
-                        <a href="#" class="projects__button button">
+                        <a href="https://xpense-davethedev.netlify.app/" class="projects__button button">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
 
                     <div class="projects__content">
-                        <h3 class="projects__subtitle">Website</h3>
-                        <h2 class="projects__title">Car site template</h2>
+                        <h3 class="projects__subtitle">Site web</h3>
+                        <h2 class="projects__title">XPENSE</h2>
 
-                        <p class="projects__description">
-                            Project that you carry out in the design 
-                            and structure of the layout, showing the 
-                            design at the client's request.
-                        </p>
+                        
                     </div>
 
                     <div class="projects__buttons">
-                        <a href="" target="_blank" class="projects__link">
+                        <a href="https://github.com/adavidj/xpense-davethedev" target="_blank" class="projects__link">
                             <i class="ri-github-line"></i>
                         </a>
 
-                        <a href="" target="_blank" class="projects__link">
+                        <a href="https://www.linkedin.com/posts/davidaidasso_react-dev-frontend-activity-7212781972807430144-XwOI?utm_source=share&utm_medium=member_desktop" target="_blank" class="projects__link">
                             <i class="ri-linkedin-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-facebook-line"></i>
                         </a>
                     </div>
                 </article>
 
                 <article class="projects__card">
                     <div class="projects__image">
-                        <img src="assets/img/project-6.png" height="300px" alt="image" class="projects__img">
+                        <img src="assets/img/project-2.png" alt="image" class="projects__img">
 
-                        <a href="#" class="projects__button button">
+                        <a href="https://virtualr-davethedev.netlify.app/" class="projects__button button">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
 
                     <div class="projects__content">
-                        <h3 class="projects__subtitle">Website</h3>
-                        <h2 class="projects__title">Ecommerce site template</h2>
+                        <h3 class="projects__subtitle">Site web</h3>
+                        <h2 class="projects__title">Virtual R</h2>
 
-                        <p class="projects__description">
-                            Project that you carry out in the design 
-                            and structure of the layout, showing the 
-                            design at the client's request.
-                        </p>
+                        
                     </div>
 
                     <div class="projects__buttons">
+                        <a href="https://github.com/adavidj/virtualr-davethedev" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                        <!-- <a href="" target="_blank" class="projects__link">
+                            <i class="ri-linkedin-line"></i>
+                        </a> -->
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-1.png" alt="image" class="projects__img">
+
+                        <a href="https://adjcoffee.netlify.app" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Site web</h3>
+                        <h2 class="projects__title">Coffee</h2>
+
+                        
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/adavidj/coffee-davethedev" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                        <!-- <a href="" target="_blank" class="projects__link">
+                            <i class="ri-linkedin-line"></i>
+                        </a> -->
+                    </div>
+                </article>
+
+                
+               
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-4.png" alt="image" class="projects__img">
+
+                        <a href="https://traveldavcode.netlify.app" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">site web</h3>
+                        <h2 class="projects__title">Voyage stade template</h2>
+
+                        
+                    </div>
+
+                    
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-6.png" height="300px" alt="image" class="projects__img">
+
+                        <a href="https://daveshopp.netlify.app" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">PLateforme web</h3>
+                        <h2 class="projects__title">Ecommerce site template</h2>
+
+                        
+                    </div>
+
+                    <!-- <div class="projects__buttons">
                         <a href="" target="_blank" class="projects__link">
                             <i class="ri-github-line"></i>
                         </a>
@@ -631,14 +575,33 @@
                         <a href="" target="_blank" class="projects__link">
                             <i class="ri-linkedin-line"></i>
                         </a>
+                    </div> -->
+                </article>
 
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-instagram-line"></i>
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-3.png"   alt="image" class="projects__img">
+
+                        <a href="https://aidassodavid.netlify.app" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Site web</h3>
+                        <h2 class="projects__title">Mon ancien portfolio web</h2>
+
+                        
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/adavidj/davidaidasso_site" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i>
                         </a>
 
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-facebook-line"></i>
-                        </a>
+                        <!-- <a href="" target="_blank" class="projects__link">
+                            <i class="ri-linkedin-line"></i>
+                        </a> -->
                     </div>
                 </article>
             </div>
@@ -649,42 +612,41 @@
             <div class="contact__container grid">
                 <div class="contact__data">
                     <h2 class="section__title-2">
-                        <span>Contact me.</span>
+                        <span>Contactez-moi.</span>
                     </h2>
 
                     <p class="contact__description-1">
-                        I will read all emails. Send me any 
-                        message you want and I'll get back to you.
+                         Dites moi ce que vous souhaitez et nous en discuterons.
                     </p>
 
-                    <p class="contact__description-2">
+                    <!-- <p class="contact__description-2">
                         I need your <b>Name</b> and <b>Email Address</b>, but 
                         you won't receive anything other than your reply.
-                    </p>
+                    </p> -->
 
                     <div class="geometric-box"></div>
                 </div>
 
                 <div class="contact__mail">
                     <h2 class="contact__title">
-                        Send me a message
+                       Envoyez moi un message !
                     </h2>
 
                     <form action="" class="contact__form" id="contact-form">
                         <div class="contact__group">
                             <div class="contact__box">
-                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First name">
+                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Prénom et nom">
                                 <label for="name" class="contact__label">First name</label>
                             </div>
 
                             <div class="contact__box">
-                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email address">
+                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Adresse mail">
                                 <label for="email" class="contact__label">Email address</label>
                             </div>
                         </div>
 
                             <div class="contact__box">
-                                <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                                <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Sujet">
                                 <label for="subject" class="contact__label">Subject</label>
                             </div>
 
@@ -696,7 +658,7 @@
                         
                         <p class="contact__message" id="contact-message"></p>
                         <button type="submit" class="contact__button button">
-                            <i class="ri-send-plane-line"></i>Send message
+                            <i class="ri-send-plane-line"></i>Envoyer le message
                         </button>
                     </form>
                 </div>
@@ -707,11 +669,11 @@
                     <div class="contact__social-data">
                         <div>
                             <p class="contact__social-description-1">
-                                Can't send emails ?
+                                Vous ne pouvez pas envoyer d'emails ?
                             </p>
 
                             <p class="contact__social-description-2">
-                                Write me on my social networks
+                                Ecrivez moi sur mes réseaux sociaux
                             </p>
                         </div>
 
@@ -744,7 +706,7 @@
          <div class="footer__container container grid">
             <ul class="footer__links">
                 <li>
-                    <a href="#about" class="footer__link">About</a>
+                    <a href="#about" class="footer__link">A propos</a>
                 </li>
 
                 <li>
@@ -752,7 +714,7 @@
                 </li>
 
                 <li>
-                    <a href="#projects" class="footer__link">Projects</a>
+                    <a href="#projects" class="footer__link">Projets</a>
                 </li>
 
                 <li>
@@ -761,7 +723,7 @@
             </ul>
 
             <span class="footer__copy">
-                &#169; ALL rights reserved by <a href="">ADCoding.</a>
+                &#169; Tous droits réservés par <a href="">DaveTheDev</a>
             </span>
          </div>
       </footer>
@@ -779,5 +741,13 @@
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
+
+      <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            Aos.init({
+                duration: 1000,
+                offset: 100,
+            })
+        </script> -->
    </body>
 </html>

@@ -490,11 +490,11 @@ body.dark-theme{
 .home__social-link{
   background-color: var(--text-color-light);
   color: var(--white-color);
-  font-size: 1.25rem;
-  padding: 6px;
-  display: grid;
+  
+  
   place-items: center;
   transition: background-color .3s;
+  border-radius: 1rem;
 }
 
 .home__social-link:hover i{
@@ -747,7 +747,7 @@ i
 
 .skills__container
 {
-  margin-top: 3rem;
+  margin-top: 6rem;
   row-gap: 3.5rem;
 }
 .skills__title
@@ -756,7 +756,7 @@ i
   justify-content: center;
   align-items: center;
   column-gap: .5rem;
-  font-size: var(--small-font-size);
+  font-size: 1.3rem;
   font-weight: var(--font-semi-bold);
   margin-bottom: 2.5rem;
 }
@@ -1190,7 +1190,8 @@ i
 
 .contact__social-link{
   background-color: var(--black-color-light);
-  padding: 6px;
+  padding: 12px;
+  border-radius: 1.3rem;
   color: var(--white-color);
   font-size: 1.25rem;
   display: grid;
@@ -1206,7 +1207,7 @@ i
   color: var(--white-color);
   font-size: var(--small-font-size);
   position: absolute;
-  bottom: -1.6rem;
+  bottom: -1.5rem;
   left: 0;
 }
 

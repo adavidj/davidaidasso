@@ -131,9 +131,9 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: '2500',
     delay: '400',
-    //reset:true
+    reset:true
 })
 
-sr.reveal(`.home__profil, .about__image, .contact__mail`, {origin: 'right'})
-sr.reveal(`.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data`,  {origin: 'left', interval:100})
-sr.reveal(`.services__card, .projects__card, .skills__container`,  {interval: 150})
+sr.reveal(`.home__profil, .about__image, .contact__mail`, {origin: 'right', interval:100, duration:2500, delay:50})
+sr.reveal(`.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data`,  {origin: 'left', interval:100, duration:1000, delay:50})
+sr.reveal(`.services__card, .projects__card, .skills__container`,  {origin:'bottom' ,interval:100, duration:2500, delay:200})
