@@ -751,6 +751,7 @@ i
   margin-top: 6rem;
   row-gap: 3.5rem;
 }
+
 .skills__title
 {
   display: flex;
@@ -759,7 +760,7 @@ i
   column-gap: .5rem;
   font-size: 1.3rem;
   font-weight: var(--font-semi-bold);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .skills__title i 
@@ -1304,10 +1305,7 @@ i
     width: 180px;
   }
 
-  .home__social{
-
-  }
-
+  
   .about__image{
     width: 180px;
   }
@@ -1321,6 +1319,8 @@ i
   {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  
 
 
   .contact__data{
@@ -1346,6 +1346,8 @@ i
   {
     justify-content: center;
   }
+
+  
 
   .contact__data{
     width: 350px;
@@ -1400,6 +1402,13 @@ i
  }
 }
 
+@media screen and (max-width: 1149px){
+  
+ .web{
+  margin-top: 2.5rem;
+}
+
+}
 /* For large devices */
 @media screen and (min-width:1150px) {
   .container{
