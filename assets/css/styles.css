@@ -620,6 +620,7 @@ body.dark-theme{
 .about{
   background-color: var(--container-color);
   transition: background-color .4s;
+  text-align: center;
 }
 
 .about__container{
@@ -1308,6 +1309,7 @@ i
   
   .about__image{
     width: 180px;
+   text-align: center;
   }
 
   .about__shadow{
@@ -1315,13 +1317,25 @@ i
     right: -2.5rem;
   }
 
+  .about__description{
+    margin-right: 1.5rem;
+  }
+
+  .about__infos{
+    
+    
+    margin-left: -1.5rem;
+  }
+
   .skills-info
   {
     grid-template-columns: repeat(2, 1fr);
+    
   }
 
-  
-
+  .skills__content{
+    margin-left: -1.6rem;
+  }
 
   .contact__data{
     width: 100%;
@@ -1329,6 +1343,31 @@ i
 
   .contact__data .section__title-2{
     transform: translateX(0);
+  }
+}
+
+
+@media screen and (max-width:372px) {
+  .about__infos{
+    /* width: max-content;
+    display: flex;
+    flex-direction: column; */
+    margin-right: 1.1rem;
+  }
+
+  
+
+  .about__buttons{
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width:365px) {
+  .about__infos{
+    /* width: max-content;
+    display: flex;
+    flex-direction: column; */
+    margin-right: 1rem;
   }
 }
 
