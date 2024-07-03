@@ -478,6 +478,7 @@ body.dark-theme{
 
 .home__social{
   height: max-content;
+  width: 0;
   position: absolute;
   left: -3rem;
   top: 0;
@@ -492,7 +493,7 @@ body.dark-theme{
   color: var(--white-color);
   
   padding: 6px;
-  place-items: center;
+  
   transition: background-color .3s;
   border-radius: 1rem;
 }
