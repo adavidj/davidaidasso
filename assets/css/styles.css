@@ -1195,8 +1195,8 @@ i
 
 .contact__social-link{
   background-color: var(--black-color-light);
-  padding: 12px;
-  border-radius: 1.3rem;
+  padding: 12px ;
+  border-radius: 1rem;
   color: var(--white-color);
   font-size: 1.25rem;
   display: grid;
@@ -1206,6 +1206,10 @@ i
 
 .contact__social-link:hover{
   background-color: var(--first-color);
+}
+
+.contact__social-links .contact__social-link i{
+  color: white;
 }
 
 .contact__message{
