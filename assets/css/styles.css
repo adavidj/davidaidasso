@@ -182,6 +182,7 @@ body.dark-theme{
 .container {
   max-width: 1120px;
   
+  margin-inline: .1rem;
 }
 
 .grid {
@@ -755,7 +756,7 @@ i
 
 .skills__container
 {
-  margin-top: 2.5rem;
+  margin-top: 5.5rem;
   row-gap: .5rem;
 }
 
