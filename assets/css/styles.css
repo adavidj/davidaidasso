@@ -181,7 +181,7 @@ body.dark-theme{
 /* REUSABLE CSS CLASSES ==*/
 .container {
   max-width: 1120px;
-   margin-inline: .5rem; 
+   margin-inline: 1.25rem; 
 }
 
 .grid {
@@ -682,7 +682,8 @@ body.dark-theme{
 }
 
 .about__info{
-  padding-left: 1.25rem;
+  
+  padding-left: .8rem;
 }
 
 .about__description{
@@ -693,11 +694,11 @@ body.dark-theme{
 
 .about__description::after{
   content: '';
-  width: 20px;
+  width: 10px;
   height: 1px;
   background-color: var(--title-color);
   position: absolute;
-  left: -1.75rem;
+  left: -1rem;
   top: .5rem;
 }
 
@@ -747,11 +748,15 @@ i
   margin-bottom: 3rem;
 }
 
+.about__item{
+  margin-top: 1rem;
+}
+
 
 .skills__container
 {
-  margin-top: 6rem;
-  row-gap: 3.5rem;
+  margin-top: 2.5rem;
+  row-gap: .5rem;
 }
 
 .skills__title
@@ -783,7 +788,7 @@ i
 .skills__info
 {
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem 2rem;
+  gap: 1rem 1rem;
 }
 
 .skills__data
