@@ -1914,4 +1914,69 @@ i
   .scrollup{
     right: 3rem;
   }
+
+  
+  /* ===== GitHub icon in header nav ===== */
+.nav__github-link {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color .3s, transform .3s;
+  display: grid;
+  place-items: center;
+}
+.nav__github-link:hover {
+  color: var(--first-color);
+  transform: scale(1.15);
+}
+.nav__github-link i {
+  font-size: 1.25rem;
+  color: inherit;
+}
+/* ===== Devicon icons inside skills blobs ===== */
+.skills__devicon {
+  font-size: 2.5rem;
+  color: var(--title-color);
+  transition: color .4s;
+}
+.dark-theme .skills__devicon {
+  color: var(--white-color);
+}
+/* ===== Tools section (Outils) ===== */
+.skills__content.tools {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--first-color);
+}
+.skills__content.tools .skills__title {
+  color: var(--first-color);
+}
+.skills__info--tools {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.skills__blob--tool {
+  width: 70px;
+  height: 85px;
+  border-radius: 2rem;
+  background-color: var(--container-color);
+  transition: background-color .4s, transform .3s;
+}
+.skills__blob--tool:hover {
+  transform: translateY(-4px);
+}
+.skills__blob--tool .skills__devicon {
+  font-size: 2rem;
+}
+/* ===== Responsive adjustments for tools ===== */
+@media screen and (min-width: 576px) {
+  .skills__info--tools {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills__info--tools {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 }
